@@ -7,7 +7,9 @@ import (
 
 	"github.com/SavvasM1/practice/controller"
 	"github.com/SavvasM1/practice/model"
-	_ "github.com/go-sql-driver/mysql"
+
+	// _ "github.com/go-sql-driver/mysql"
+	_ "github.com/lib/pq"
 )
 
 func main() {
