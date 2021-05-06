@@ -1,6 +1,8 @@
 package model
 
-import "github.com/SavvasM1/practice/views"
+import (
+	"github.com/SavvasM1/practice/views"
+)
 
 func ReadAll() ([]views.PostRequest, error) {
 	rows, err := connection.Query("SELECT * FROM TODO")
