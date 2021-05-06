@@ -3,7 +3,7 @@ package model
 import "github.com/SavvasM1/practice/views"
 
 func ReadByName(name string) ([]views.PostRequest, error) {
-	sqlStatement := "SELECT * FROM TODO WHERE name=?"
+	sqlStatement := "SELECT * FROM TODO WHERE name=$1"
 
 	rows, err := connection.Query(sqlStatement, name)
 
