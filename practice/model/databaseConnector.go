@@ -23,7 +23,7 @@ func Connect() *sql.DB {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Connected to MYSQL")
+	fmt.Println("Connected to Psql")
 	connection = db
 	return db
 }
